@@ -7,6 +7,7 @@ RUN set -x \
     && apt-get install -y --no-install-recommends \
         ca-certificates \
         curl \
+        libhiredis0.13 \
         lsb-release \
     && rm -rf /var/lib/apt/lists/* \
     && curl -O "https://repo.stackdriver.com/stack-install.sh" \
